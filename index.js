@@ -34,14 +34,13 @@ function makeCake() {
 }
 
 function makePie() {
-<<<<<<< HEAD
   var pieNode = document.getElementById("pie")
   var updatePieStatus = updateStatus.bind(pieNode)
-=======
+
   var updatePieStatus = function(statusText){
     document.getElementById('pie').getElementsByClassName("status")[0]​.innerText = statusText
   }
->>>>>>> 9dd8bd8a0c794a965cb45e100090a02ed707f39e
+
   pie.decorate = cake.decorate.bind(pie)
   mix.call(pie,updatePieStatus)
 }
